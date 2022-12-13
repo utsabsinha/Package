@@ -1,0 +1,27 @@
+---
+attrNameSnakeCase: true
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
+whitelistObjectNames:
+  - "com.bea:Name=*,Type=ServerRuntime"
+  - "com.bea:ServerRuntime=*,Type=ApplicationRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=JDBCDataSourceRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=JMSDestinationRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=JDBCStoreRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=FileStoreRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=SAFRemoteEndpointRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=ThreadPoolRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=JMSRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=SAFRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=WorkManagerRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=MessagingBridgeRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=PersistentStoreRuntime,*"
+  - "com.bea:ServerRuntime=*,Type=WebServerRuntime,*"
+blacklistObjectNames:
+  - "com.datadog.*"
+  - "datadog.*"
+  - "net.bytebuddy.*"
+  - "com.riverbed*"
+rules:  
+  - pattern: ".*"
+    
